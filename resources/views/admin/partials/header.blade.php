@@ -73,7 +73,7 @@
                       <li class="dropdown-header">
                         <img src="/admin/assets/img/user/user.png" class="img-circle" alt="User Image" />
                         <div class="d-inline-block">
-                          Abdus Salam <small class="pt-1">admin@chesspedia.my.id</small>
+                          Admin <small class="pt-1">admin@chesspedia.my.id</small>
                         </div>
                       </li>
 

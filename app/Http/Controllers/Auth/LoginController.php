@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use App\User;
+use App\Http\Controllers\Auth\role;
 
 /**
  * LoginController
@@ -40,10 +42,10 @@ class LoginController extends Controller
 	 * @var string
 	 */
 	//protected $redirectTo = '/admin/dashboard/';
-	protected function redirectTo()
+	public function redirectTo()
     {
 		
-        if ( Auth::user()->role=='ADMIN') {
+        if (!$user->hasRole('Admin')) {
 			return '/admin/dashboard/';
         }
         return '/home';
