@@ -39,7 +39,7 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create()//fungsi buat nambah categori
     {
         $categories = Category::orderBy('name', 'asc')->get();
 

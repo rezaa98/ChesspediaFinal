@@ -4,7 +4,6 @@
 		<div class="container-fluid">
 			<div class="section-title-6 text-center mb-50">
 				<h2>Popular Product</h2>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
 			</div>
 			<div class="product-style">
 				<div class="popular-product-active owl-carousel">
@@ -41,6 +40,9 @@
 					@endforeach
 				</div>
 			</div>
+			<center>
+			<a class="furniture-slider-btn btn-hover animated" href="/products/">Show All Product</a>
+			</center>				
 		</div>
 	</div>
 	<!-- product area end -->

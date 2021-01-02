@@ -8,7 +8,7 @@
  *
  * @category WebRoutes
  * @package  WebRoutes
- * @author   Sugiarto <sugiarto.dlingo@gmail.com>
+ * @author   Chesspedia.id@gmail.com
  * @license  https://opensource.org/licenses/MIT MIT License
  * @link     http://localhost/
  */

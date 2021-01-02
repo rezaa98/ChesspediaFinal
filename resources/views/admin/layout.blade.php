@@ -1,3 +1,4 @@
+@can('delete_products')
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
@@ -5,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Sleek Dashboard - Free Bootstrap 4 Admin Dashboard Template and UI Kit. It is very powerful bootstrap admin dashboard, which allows you to build products like admin panels, content management systems and CRMs etc.">
-		<title>Sleek - Admin Dashboard Template</title>
+		<title>Chesspedia Admin</title>
 
 		<!-- GOOGLE FONTS -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet" />
@@ -63,6 +64,7 @@
 			</div>
 			@include('admin.partials.footer')
 		</div>
+		
 	</div>
 
 	<script src="{{ URL::asset('admin/assets/plugins/jquery/jquery.min.js') }}"></script>
@@ -117,3 +119,4 @@
 	</script>
 	</body>
 </html>
+@endcan

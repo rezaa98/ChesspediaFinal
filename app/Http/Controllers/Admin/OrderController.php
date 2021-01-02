@@ -20,7 +20,7 @@ use App\Authorizable;
  *
  * @category OrderController
  * @package  OrderController
- * @author   Sugiarto <sugiarto.dlingo@gmail.com>
+ * @author   Chesspedia <chesspedia.id@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT License
  * @link     http://localhost/
  */

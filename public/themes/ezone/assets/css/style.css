@@ -4404,7 +4404,7 @@ a.icon-cart-furniture span.green {
 .furniture-login ul li a {
     text-transform: uppercase;
     font-weight: bold;
-    color: #999999;
+    color: #04202c;
 }
 .furniture-login ul li::before {
     background-color: #999999;
@@ -4518,6 +4518,17 @@ a.icon-cart-furniture span.green {
     line-height: 1;
     padding: 13px 30px 12px;
     text-transform: uppercase;
+}
+ .allproduct-slider-btn {
+        border: 1px solid #333;
+        border-radius: 50px;
+        color: #383838;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1;
+        padding: 13px 30px 12px;
+        text-transform: uppercase;
 }
 .furniture-slider-btn:hover {
     border: 1px solid #000;

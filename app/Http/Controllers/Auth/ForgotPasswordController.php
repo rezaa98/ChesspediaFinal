@@ -12,7 +12,7 @@ use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
  *
  * @category ForgotPasswordController
  * @package  ForgotPasswordController
- * @author   Sugiarto <sugiarto.dlingo@gmail.com>
+ * @author   Chesspedia <chesspedia.id@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT License
  * @link     http://localhost/
  */

@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 /**
  * LoginController
@@ -12,7 +14,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
  *
  * @category LoginController
  * @package  LoginController
- * @author   Sugiarto <sugiarto.dlingo@gmail.com>
+ * @author   Chesspedia <chesspedia.id@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT License
  * @link     http://localhost/
  */
@@ -30,13 +32,31 @@ class LoginController extends Controller
 	*/
 
 	use AuthenticatesUsers;
+	
 
 	/**
 	 * Where to redirect users after login.
 	 *
 	 * @var string
 	 */
-	protected $redirectTo = '/home';
+	//protected $redirectTo = '/admin/dashboard/';
+	protected function redirectTo()
+    {
+		$user = Auth::user();
+        if ( $user->hasAnyRole(['admin']) ) {
+			return '/admin/dashboard/';
+        }
+
+        return '/home';
+	}
+	
+	// protected function redirectTo()
+    // {
+    //     if (auth()->user()->role == 'admin') {
+    //         return '/admin/dashboard';
+    //     }
+    //     return '/home';
+    // }`
 
 	/**
 	 * Create a new controller instance.

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Validator;
  *
  * @category RegisterController
  * @package  RegisterController
- * @author   Sugiarto <sugiarto.dlingo@gmail.com>
+ * @author   Chesspedia <chesspedia.id@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT License
  * @link     http://localhost/
  */
@@ -40,6 +40,13 @@ class RegisterController extends Controller
 	 * @var string
 	 */
 	protected $redirectTo = '/home';
+    protected function redirectTo()
+    {
+        if (auth()->user()->role == 'admin') {
+            return '/admin/dashboard';
+        }
+        return '/home';
+    }
 
 	/**
 	 * Create a new controller instance.
