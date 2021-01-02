@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @category Shipment
  * @package  Shipment
- * @author   Sugiarto <sugiarto.dlingo@gmail.com>
+ * @author   Chesspedia <chesspedia.id@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT License
  * @link     http://localhost/
  */

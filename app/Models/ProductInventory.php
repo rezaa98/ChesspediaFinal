@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @category ProductInventory
  * @package  ProductInventory
- * @author   Sugiarto <sugiarto.dlingo@gmail.com>
+ * @author   Chesspedia <chesspedia.id@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT License
  * @link     http://localhost/
  */
