@@ -225,18 +225,18 @@ $(document).ready(function() {
             backgroundColor: "transparent",
             borderColor: "rgb(82, 136, 255)",
             data: [
-              100,
-              11000,
-              10000,
-              14000,
-              11000,
-              17000,
-              14500,
-              18000,
-              5000,
-              23000,
-              14000,
-              19000
+              1130000,
+              2000000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
             ],
             lineTension: 0.3,
             pointRadius: 5,
@@ -304,7 +304,7 @@ $(document).ready(function() {
               return data["labels"][tooltipItem[0]["index"]];
             },
             label: function(tooltipItem, data) {
-              return "$" + data["datasets"][0]["data"][tooltipItem["index"]];
+              return "Rp" + data["datasets"][0]["data"][tooltipItem["index"]];
             }
           },
           responsive: true,

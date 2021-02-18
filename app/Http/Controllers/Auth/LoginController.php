@@ -42,22 +42,22 @@ class LoginController extends Controller
 	 * @var string
 	 */
 	//protected $redirectTo = '/admin/dashboard/';
-	public function redirectTo()
-    {
-		
-        if (!$user->hasRole('Admin')) {
-			return '/admin/dashboard/';
-        }
-        return '/home';
-	}
-	
-	// protected function redirectTo()
+	// public function redirectTo()
     // {
-    //     if (auth()->user()->role == 'admin') {
-    //         return '/admin/dashboard';
+		
+    //     if (!$user->hasRole('Admin')) {
+	// 		return '/admin/dashboard/';
     //     }
     //     return '/home';
-    // }`
+	// }
+	
+	protected function redirectTo()
+    {
+        if (auth()->user()->role == 'admin') {
+            return '/admin/dashboard';
+        }
+        return '/home';
+    }
 
 	/**
 	 * Create a new controller instance.

@@ -4,10 +4,10 @@
 	<div class="breadcrumb-area pt-205 breadcrumb-padding pb-210" style="background-image: url({{ asset('themes/ezone/assets/img/bg/breadcrumb.jpg') }})">
 		<div class="container-fluid">
 			<div class="breadcrumb-content text-center">
-				<h2>My Favorites</h2>
+				<h2>User Menu</h2>
 				<ul>
 					<li><a href="{{ url('/') }}">home</a></li>
-					<li>my favorites</li>
+					<li>user menu</li>
 				</ul>
 			</div>
 		</div>
@@ -44,6 +44,7 @@
 									<br> Email: {{ $order->shipment->email }}
 									<br> Phone: {{ $order->shipment->phone }}
 									<br> Postcode: {{ $order->shipment->postcode }}
+									<br> AWB: {{ $order->shipping_service_name }} {{ $order->shipment->track_number}} 
 								</address>
 							</div>
 						@endif
